@@ -13,7 +13,7 @@ in_source: |-
   print_username
   ." !"
 in_stdin: |-
-  Nikita
+  Oleg
 out_code: |-
   {
     "memory": [
@@ -706,7 +706,7 @@ out_code: |-
   }
 out_stdout: |-
   What is your name?
-  Hello, Nikita!
+  Hello, Oleg!
 out_log: |
   DEBUG    root:machine.py:356 Fetching instruction id = 0
   DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
