@@ -410,7 +410,7 @@ def simulate(source_path: str, input_path: str, result_path: str):
 
 
 if __name__ == "__main__":
-    # assert len(sys.argv) == 3, "Usage: python machine.py <source> <input> <target>"
-    # simulate(sys.argv[1], sys.argv[2], sys.argv[3])
+    assert len(sys.argv) == 3, "Usage: python machine.py <source> <input> <target>"
     logging.basicConfig(level=logging.DEBUG, handlers=[logging.StreamHandler()], encoding="utf-8")
-    simulate("dest.o", "input.txt", "result.txt")
+    simulate(sys.argv[1], sys.argv[2], sys.argv[3])
+    # simulate("dest.o", "input.txt", "result.txt")
