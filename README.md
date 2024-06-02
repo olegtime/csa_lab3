@@ -154,7 +154,7 @@ while_loop  ::=     "begin" { term } "until"
 ## Транслятор
 
 ```
-python python translator.py <source> <target>
+python translator.py <source> <target>
 ```
 
 Трансляция реализуется в несколько этапов:
@@ -170,7 +170,7 @@ python python translator.py <source> <target>
 ## Модель процессора
 
 ```
-python python machine.py <source> <input> <target>
+python machine.py <source> <input> <target>
 ```
 
 ```text
