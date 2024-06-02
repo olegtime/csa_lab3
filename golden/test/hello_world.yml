@@ -1,0 +1,806 @@
+in_source: |-
+  ." Hello, World!"
+in_stdin: |-
+out_code: |-
+  {
+    "memory": [
+      {
+        "idx": 0,
+        "size": 1
+      },
+      {
+        "idx": 1,
+        "size": 1
+      },
+      {
+        "idx": 2,
+        "size": 1
+      },
+      {
+        "idx": 3,
+        "size": 1
+      },
+      {
+        "idx": 4,
+        "size": 1
+      }
+    ],
+    "instructions": [
+      {
+        "idx": 0,
+        "opcode": "push",
+        "operand": 72
+      },
+      {
+        "idx": 1,
+        "opcode": "save",
+        "operand": 1
+      },
+      {
+        "idx": 2,
+        "opcode": "push",
+        "operand": 101
+      },
+      {
+        "idx": 3,
+        "opcode": "save",
+        "operand": 1
+      },
+      {
+        "idx": 4,
+        "opcode": "push",
+        "operand": 108
+      },
+      {
+        "idx": 5,
+        "opcode": "save",
+        "operand": 1
+      },
+      {
+        "idx": 6,
+        "opcode": "push",
+        "operand": 108
+      },
+      {
+        "idx": 7,
+        "opcode": "save",
+        "operand": 1
+      },
+      {
+        "idx": 8,
+        "opcode": "push",
+        "operand": 111
+      },
+      {
+        "idx": 9,
+        "opcode": "save",
+        "operand": 1
+      },
+      {
+        "idx": 10,
+        "opcode": "push",
+        "operand": 44
+      },
+      {
+        "idx": 11,
+        "opcode": "save",
+        "operand": 1
+      },
+      {
+        "idx": 12,
+        "opcode": "push",
+        "operand": 32
+      },
+      {
+        "idx": 13,
+        "opcode": "save",
+        "operand": 1
+      },
+      {
+        "idx": 14,
+        "opcode": "push",
+        "operand": 87
+      },
+      {
+        "idx": 15,
+        "opcode": "save",
+        "operand": 1
+      },
+      {
+        "idx": 16,
+        "opcode": "push",
+        "operand": 111
+      },
+      {
+        "idx": 17,
+        "opcode": "save",
+        "operand": 1
+      },
+      {
+        "idx": 18,
+        "opcode": "push",
+        "operand": 114
+      },
+      {
+        "idx": 19,
+        "opcode": "save",
+        "operand": 1
+      },
+      {
+        "idx": 20,
+        "opcode": "push",
+        "operand": 108
+      },
+      {
+        "idx": 21,
+        "opcode": "save",
+        "operand": 1
+      },
+      {
+        "idx": 22,
+        "opcode": "push",
+        "operand": 100
+      },
+      {
+        "idx": 23,
+        "opcode": "save",
+        "operand": 1
+      },
+      {
+        "idx": 24,
+        "opcode": "push",
+        "operand": 33
+      },
+      {
+        "idx": 25,
+        "opcode": "save",
+        "operand": 1
+      },
+      {
+        "idx": 26,
+        "opcode": "hlt"
+      },
+      {
+        "idx": 27,
+        "opcode": "read",
+        "operand": 2
+      },
+      {
+        "idx": 28,
+        "opcode": "dup"
+      },
+      {
+        "idx": 29,
+        "opcode": "push",
+        "operand": 10
+      },
+      {
+        "idx": 30,
+        "opcode": "read",
+        "operand": 2
+      },
+      {
+        "idx": 31,
+        "opcode": "push",
+        "operand": 10
+      },
+      {
+        "idx": 32,
+        "opcode": "div"
+      },
+      {
+        "idx": 33,
+        "opcode": "mul"
+      },
+      {
+        "idx": 34,
+        "opcode": "sub"
+      },
+      {
+        "idx": 35,
+        "opcode": "push",
+        "operand": 48
+      },
+      {
+        "idx": 36,
+        "opcode": "add"
+      },
+      {
+        "idx": 37,
+        "opcode": "swap"
+      },
+      {
+        "idx": 38,
+        "opcode": "push",
+        "operand": 10
+      },
+      {
+        "idx": 39,
+        "opcode": "div"
+      },
+      {
+        "idx": 40,
+        "opcode": "dup"
+      },
+      {
+        "idx": 41,
+        "opcode": "save",
+        "operand": 2
+      },
+      {
+        "idx": 42,
+        "opcode": "push",
+        "operand": 0
+      },
+      {
+        "idx": 43,
+        "opcode": "eql"
+      },
+      {
+        "idx": 44,
+        "opcode": "jmz",
+        "operand": 27
+      },
+      {
+        "idx": 45,
+        "opcode": "ret"
+      },
+      {
+        "idx": 46,
+        "opcode": "dup"
+      },
+      {
+        "idx": 47,
+        "opcode": "save",
+        "operand": 1
+      },
+      {
+        "idx": 48,
+        "opcode": "jnz",
+        "operand": 46
+      },
+      {
+        "idx": 49,
+        "opcode": "ret"
+      }
+    ]
+  }
+out_stdout: |-
+  Hello, World!
+out_log: |
+  DEBUG    root:machine.py:356 Fetching instruction id = 0
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 0: push
+  DEBUG    root:machine.py:365 Has operand 72
+  DEBUG    root:machine.py:367 Processing mcode instruction DsMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [] ALU: res = 72, a = 72, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.PUSH
+  DEBUG    root:machine.py:370 DS: [72] RS: [] OutBuffer: [] ALU: res = 72, a = 72, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 1
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 1: save
+  DEBUG    root:machine.py:365 Has operand 1
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [72] RS: [] OutBuffer: [] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:370 DS: [72] RS: [] OutBuffer: [] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.DS
+  DEBUG    root:machine.py:370 DS: [72] RS: [] OutBuffer: [] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.WRITE
+  DEBUG    root:machine.py:370 DS: [72] RS: [] OutBuffer: [72] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.POP
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 2
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 2: push
+  DEBUG    root:machine.py:365 Has operand 101
+  DEBUG    root:machine.py:367 Processing mcode instruction DsMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72] ALU: res = 101, a = 101, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.PUSH
+  DEBUG    root:machine.py:370 DS: [101] RS: [] OutBuffer: [72] ALU: res = 101, a = 101, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 3
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 3: save
+  DEBUG    root:machine.py:365 Has operand 1
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [101] RS: [] OutBuffer: [72] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:370 DS: [101] RS: [] OutBuffer: [72] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.DS
+  DEBUG    root:machine.py:370 DS: [101] RS: [] OutBuffer: [72] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.WRITE
+  DEBUG    root:machine.py:370 DS: [101] RS: [] OutBuffer: [72, 101] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.POP
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 4
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 4: push
+  DEBUG    root:machine.py:365 Has operand 108
+  DEBUG    root:machine.py:367 Processing mcode instruction DsMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101] ALU: res = 108, a = 108, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.PUSH
+  DEBUG    root:machine.py:370 DS: [108] RS: [] OutBuffer: [72, 101] ALU: res = 108, a = 108, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 5
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 5: save
+  DEBUG    root:machine.py:365 Has operand 1
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [108] RS: [] OutBuffer: [72, 101] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:370 DS: [108] RS: [] OutBuffer: [72, 101] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.DS
+  DEBUG    root:machine.py:370 DS: [108] RS: [] OutBuffer: [72, 101] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.WRITE
+  DEBUG    root:machine.py:370 DS: [108] RS: [] OutBuffer: [72, 101, 108] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.POP
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 6
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 6: push
+  DEBUG    root:machine.py:365 Has operand 108
+  DEBUG    root:machine.py:367 Processing mcode instruction DsMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108] ALU: res = 108, a = 108, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.PUSH
+  DEBUG    root:machine.py:370 DS: [108] RS: [] OutBuffer: [72, 101, 108] ALU: res = 108, a = 108, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 7
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 7: save
+  DEBUG    root:machine.py:365 Has operand 1
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [108] RS: [] OutBuffer: [72, 101, 108] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:370 DS: [108] RS: [] OutBuffer: [72, 101, 108] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.DS
+  DEBUG    root:machine.py:370 DS: [108] RS: [] OutBuffer: [72, 101, 108] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.WRITE
+  DEBUG    root:machine.py:370 DS: [108] RS: [] OutBuffer: [72, 101, 108, 108] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.POP
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 8
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 8: push
+  DEBUG    root:machine.py:365 Has operand 111
+  DEBUG    root:machine.py:367 Processing mcode instruction DsMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108] ALU: res = 111, a = 111, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.PUSH
+  DEBUG    root:machine.py:370 DS: [111] RS: [] OutBuffer: [72, 101, 108, 108] ALU: res = 111, a = 111, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 9
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 9: save
+  DEBUG    root:machine.py:365 Has operand 1
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [111] RS: [] OutBuffer: [72, 101, 108, 108] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:370 DS: [111] RS: [] OutBuffer: [72, 101, 108, 108] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.DS
+  DEBUG    root:machine.py:370 DS: [111] RS: [] OutBuffer: [72, 101, 108, 108] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.WRITE
+  DEBUG    root:machine.py:370 DS: [111] RS: [] OutBuffer: [72, 101, 108, 108, 111] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.POP
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108, 111] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 10
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 10: push
+  DEBUG    root:machine.py:365 Has operand 44
+  DEBUG    root:machine.py:367 Processing mcode instruction DsMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108, 111] ALU: res = 44, a = 44, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.PUSH
+  DEBUG    root:machine.py:370 DS: [44] RS: [] OutBuffer: [72, 101, 108, 108, 111] ALU: res = 44, a = 44, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 11
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 11: save
+  DEBUG    root:machine.py:365 Has operand 1
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [44] RS: [] OutBuffer: [72, 101, 108, 108, 111] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:370 DS: [44] RS: [] OutBuffer: [72, 101, 108, 108, 111] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.DS
+  DEBUG    root:machine.py:370 DS: [44] RS: [] OutBuffer: [72, 101, 108, 108, 111] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.WRITE
+  DEBUG    root:machine.py:370 DS: [44] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.POP
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 12
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 12: push
+  DEBUG    root:machine.py:365 Has operand 32
+  DEBUG    root:machine.py:367 Processing mcode instruction DsMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44] ALU: res = 32, a = 32, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.PUSH
+  DEBUG    root:machine.py:370 DS: [32] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44] ALU: res = 32, a = 32, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 13
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 13: save
+  DEBUG    root:machine.py:365 Has operand 1
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [32] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:370 DS: [32] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.DS
+  DEBUG    root:machine.py:370 DS: [32] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.WRITE
+  DEBUG    root:machine.py:370 DS: [32] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.POP
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 14
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 14: push
+  DEBUG    root:machine.py:365 Has operand 87
+  DEBUG    root:machine.py:367 Processing mcode instruction DsMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32] ALU: res = 87, a = 87, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.PUSH
+  DEBUG    root:machine.py:370 DS: [87] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32] ALU: res = 87, a = 87, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 15
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 15: save
+  DEBUG    root:machine.py:365 Has operand 1
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [87] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:370 DS: [87] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.DS
+  DEBUG    root:machine.py:370 DS: [87] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.WRITE
+  DEBUG    root:machine.py:370 DS: [87] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.POP
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 16
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 16: push
+  DEBUG    root:machine.py:365 Has operand 111
+  DEBUG    root:machine.py:367 Processing mcode instruction DsMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87] ALU: res = 111, a = 111, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.PUSH
+  DEBUG    root:machine.py:370 DS: [111] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87] ALU: res = 111, a = 111, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 17
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 17: save
+  DEBUG    root:machine.py:365 Has operand 1
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [111] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:370 DS: [111] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.DS
+  DEBUG    root:machine.py:370 DS: [111] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.WRITE
+  DEBUG    root:machine.py:370 DS: [111] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.POP
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 18
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 18: push
+  DEBUG    root:machine.py:365 Has operand 114
+  DEBUG    root:machine.py:367 Processing mcode instruction DsMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111] ALU: res = 114, a = 114, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.PUSH
+  DEBUG    root:machine.py:370 DS: [114] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111] ALU: res = 114, a = 114, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 19
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 19: save
+  DEBUG    root:machine.py:365 Has operand 1
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [114] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:370 DS: [114] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.DS
+  DEBUG    root:machine.py:370 DS: [114] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.WRITE
+  DEBUG    root:machine.py:370 DS: [114] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.POP
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 20
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 20: push
+  DEBUG    root:machine.py:365 Has operand 108
+  DEBUG    root:machine.py:367 Processing mcode instruction DsMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114] ALU: res = 108, a = 108, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.PUSH
+  DEBUG    root:machine.py:370 DS: [108] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114] ALU: res = 108, a = 108, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 21
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 21: save
+  DEBUG    root:machine.py:365 Has operand 1
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [108] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:370 DS: [108] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.DS
+  DEBUG    root:machine.py:370 DS: [108] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.WRITE
+  DEBUG    root:machine.py:370 DS: [108] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.POP
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 22
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 22: push
+  DEBUG    root:machine.py:365 Has operand 100
+  DEBUG    root:machine.py:367 Processing mcode instruction DsMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108] ALU: res = 100, a = 100, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.PUSH
+  DEBUG    root:machine.py:370 DS: [100] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108] ALU: res = 100, a = 100, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 23
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 23: save
+  DEBUG    root:machine.py:365 Has operand 1
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [100] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:370 DS: [100] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.DS
+  DEBUG    root:machine.py:370 DS: [100] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.WRITE
+  DEBUG    root:machine.py:370 DS: [100] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108, 100] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.POP
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108, 100] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 24
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 24: push
+  DEBUG    root:machine.py:365 Has operand 33
+  DEBUG    root:machine.py:367 Processing mcode instruction DsMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108, 100] ALU: res = 33, a = 33, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.PUSH
+  DEBUG    root:machine.py:370 DS: [33] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108, 100] ALU: res = 33, a = 33, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 25
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 25: save
+  DEBUG    root:machine.py:365 Has operand 1
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.ALU
+  DEBUG    root:machine.py:370 DS: [33] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108, 100] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:370 DS: [33] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108, 100] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DmMuxSignal.DS
+  DEBUG    root:machine.py:370 DS: [33] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108, 100] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataMemorySignal.WRITE
+  DEBUG    root:machine.py:370 DS: [33] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108, 100, 33] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:367 Processing mcode instruction DataStackSignal.POP
+  DEBUG    root:machine.py:370 DS: [] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108, 100, 33] ALU: res = 1, a = 1, b = 0
+  DEBUG    root:machine.py:356 Fetching instruction id = 26
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.SET_ADDRESS
+  DEBUG    root:machine.py:358 Processing mcode instruction InstructionMemorySignal.READ
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IR
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalA.IM
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_A
+  DEBUG    root:machine.py:358 Processing mcode instruction AluMuxSignalB.ZERO
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.SET_B
+  DEBUG    root:machine.py:358 Processing mcode instruction AluSignal.ADD
+  DEBUG    root:machine.py:358 Processing mcode instruction IpMuxSignal.IP
+  DEBUG    root:machine.py:358 Processing mcode instruction LatchSignal.IP
+  DEBUG    root:machine.py:362 Instruction n = 26: hlt
+  DEBUG    root:machine.py:372 Has no operand
+  DEBUG    root:machine.py:374 Processing mcode instruction ControlSignal.HALT
+  DEBUG    root:machine.py:377 DS: [] RS: [] OutBuffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108, 100, 33] ALU: res = 0, a = 0, b = 0
+  INFO     root:machine.py:404 System time: 362, instructions: 27, output buffer: [72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108, 100, 33]
