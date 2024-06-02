@@ -418,7 +418,7 @@ def translate(source_path: str, dest_path: str) -> None:
 
 
 if __name__ == "__main__":
-    # assert len(sys.argv) == 3, "Usage: python translator.py <source> <target>"
-    # translate(sys.argv[1], sys.argv[2])
+    assert len(sys.argv) == 3, "Usage: python translator.py <source> <target>"
+    translate(sys.argv[1], sys.argv[2])
 
-    translate("golden/src/prob2.4th", "dest.o")
+    # translate("golden/src/prob2.4th", "dest.o")
